@@ -1,6 +1,6 @@
 FROM hussainweb/drupal-base:php8.1
 
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - &&\
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - &&\
     curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - &&\
     echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list && \
     apt-get update && \
